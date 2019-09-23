@@ -78,8 +78,8 @@ def plot_rgb_image(img):
   plt.show()
 
 
- def french():
-  blue = np.hstack([np.ones((22,22)),np.zeros((22,11))])
-  green = np.hstack([np.zeros((22,11)), np.ones((22,11)),np.zeros((22,11))])
-  red = np.hstack([np.zeros((22,11)), np.ones((22,22))])
-  return np.moveaxis(np.array([red,green,blue]),0,-1)
+def french():
+    blue = np.hstack([np.ones((22,22)),np.zeros((22,11))])
+    green = np.hstack([np.zeros((22,11)), np.ones((22,11)),np.zeros((22,11))])
+    red = np.hstack([np.zeros((22,11)), np.ones((22,22))])
+    return np.moveaxis(np.array([red,green,blue]),0,-1)
