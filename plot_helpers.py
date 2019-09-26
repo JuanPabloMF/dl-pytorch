@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import skimage.io as io
 import matplotlib.pyplot as plt
+import torch
 
 def plot_cube(max_x,max_y,max_z, annot_x, annot_y, annot_z):
     # This import registers the 3D projection, but is otherwise unused.
