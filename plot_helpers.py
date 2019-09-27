@@ -98,7 +98,7 @@ def imshow(inp, title=None):
     plt.pause(0.001)  # 
 
 
-def visualize_model(model, dataloaders, num_images=6):
+def visualize_model(model, dataloaders, device, num_images=6):
     was_training = model.training
     model.eval()
     images_so_far = 0
@@ -123,3 +123,4 @@ def visualize_model(model, dataloaders, num_images=6):
                     model.train(mode=was_training)
                     return
         model.train(mode=was_training)
+
