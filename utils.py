@@ -14,6 +14,7 @@ import torchvision.transforms as transforms
 
 import time
 import datetime
+from torch.autograd import Variable
 # Replay buffer stores previous results from generator, so that discriminator does not forget previous generated images
 class ReplayBuffer():
     def __init__(self, max_size=50):
